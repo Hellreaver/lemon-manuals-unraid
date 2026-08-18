@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CommunityApplications>
   <Profile>
-    This repository provides Unraid Community Applications templates for lemon-manuals, 
-    allowing you to easily deploy and manage the software as a Docker container on Unraid OS.
+    Unraid Community Applications templates for lemon-manuals, allowing you to easily deploy a docker container. Uses existing torrent location structure so you can keep seeding.
   </Profile>
   <Icon>https://githubusercontent.com</Icon>
   <WebPage>https://github.com/Hellreaver/lemon-manuals-unraid</WebPage>
