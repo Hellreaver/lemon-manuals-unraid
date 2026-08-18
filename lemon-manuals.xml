@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>lemon-manuals</Name>
+  <Repository>hellreaver/lemon-manuals</Repository>
+  <Registry>https://hub.docker.com/r/hellreaver/lemon-manuals</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/users/Hellreaver/packages/container/package/lemon-manuals</Support>
+  <Overview>Serves Lemon and Charm manuals from local index.json files.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:16080]/</WebUI>
+  <Icon></Icon>
+  <ExtraParams></ExtraParams>
+  <PostArgs></PostArgs>
+  <Config Name="Port" Target="8080" Default="16080" Mode="tcp" Description="Web UI port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Lemon data" Target="/data/lemon" Default="" Mode="ro" Description="Host path to lemon folder (must contain index.json)" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Charm data" Target="/data/charm" Default="" Mode="ro" Description="Host path to charm folder (must contain index.json)" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
