@@ -1,0 +1,17 @@
+services:
+  lemon-manuals:
+    container_name: lemon-manuals
+    build:
+      context: /mnt/user/appdata/lemon-website
+      dockerfile: dockerfile
+    restart: unless-stopped
+    ports:
+      - "16080:8080"
+    volumes:
+      - /mnt/user/Deluge/complete/seeding/misc/lemon-manuals/e9dfaf202d2b8b99988d2e87517b7a90eb73ad92/lemon-manuals/lemon:/data/lemon:ro
+      - /mnt/user/Deluge/complete/seeding/misc/lemon-manuals/e9dfaf202d2b8b99988d2e87517b7a90eb73ad92/lemon-manuals/charm:/data/charm:ro
+    command:
+      - "--listen-address"
+      - "0.0.0.0:8080"
+      - "/data/lemon/index.json"
+      - "/data/charm/index.json"
