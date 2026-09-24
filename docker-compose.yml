@@ -1,17 +1,16 @@
 services:
   lemon-manuals:
     container_name: lemon-manuals
-    build:
-      context: /mnt/user/appdata/lemon-website
-      dockerfile: dockerfile
+    image: hellreaver/lemon-manuals:latest
+    # To build locally instead, comment out "image" and uncomment "build".
+    # The build folder needs the Dockerfile plus lemon-website-linux-x86_64-glibc.
+    # build:
+    #   context: .
     restart: unless-stopped
     ports:
       - "16080:8080"
     volumes:
-      - /mnt/user/Deluge/complete/seeding/misc/lemon-manuals/e9dfaf202d2b8b99988d2e87517b7a90eb73ad92/lemon-manuals/lemon:/data/lemon:ro
-      - /mnt/user/Deluge/complete/seeding/misc/lemon-manuals/e9dfaf202d2b8b99988d2e87517b7a90eb73ad92/lemon-manuals/charm:/data/charm:ro
-    command:
-      - "--listen-address"
-      - "0.0.0.0:8080"
-      - "/data/lemon/index.json"
-      - "/data/charm/index.json"
+      # Point these at the "lemon" and "charm" folders from the LEMON torrent.
+      # Each folder must contain an index.json. Read-only is enough.
+      - /mnt/user/downloads/lemon-manuals/lemon:/data/lemon:ro
+      - /mnt/user/downloads/lemon-manuals/charm:/data/charm:ro

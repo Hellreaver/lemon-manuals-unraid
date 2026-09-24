@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CommunityApplications>
   <Profile>
-    Unraid Community Applications templates for lemon-manuals, allowing you to easily deploy a docker container. Uses existing torrent location structure so you can keep seeding.
+    Unraid Community Applications template for lemon-manuals. It serves the LEMON and CHARM service manuals straight from your existing torrent folders, mounted read-only, so you can keep seeding.
   </Profile>
-  <Icon>https://githubusercontent.com</Icon>
   <WebPage>https://github.com/Hellreaver/lemon-manuals-unraid</WebPage>
 </CommunityApplications>
