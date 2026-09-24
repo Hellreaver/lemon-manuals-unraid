@@ -11,7 +11,7 @@
   <Overview>Serves the LEMON and CHARM car service manuals from a local copy of the LEMON torrent. Point the two paths at the torrent's lemon and charm folders (each must contain index.json); the container mounts them read-only, so you can keep seeding from the same files.</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <Icon></Icon>
+  <Icon>https://raw.githubusercontent.com/Hellreaver/lemon-manuals-unraid/main/assets/lemon-manuals.png</Icon>
   <ExtraParams></ExtraParams>
   <PostArgs></PostArgs>
   <Config Name="Port" Target="8080" Default="16080" Mode="tcp" Description="Web UI port" Type="Port" Display="always" Required="true" Mask="false">16080</Config>

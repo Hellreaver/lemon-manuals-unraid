@@ -3,5 +3,6 @@
   <Profile>
     Unraid Community Applications template for lemon-manuals. It serves the LEMON and CHARM service manuals straight from your existing torrent folders, mounted read-only, so you can keep seeding.
   </Profile>
+  <Icon>https://raw.githubusercontent.com/Hellreaver/lemon-manuals-unraid/main/assets/lemon-manuals.png</Icon>
   <WebPage>https://github.com/Hellreaver/lemon-manuals-unraid</WebPage>
 </CommunityApplications>
